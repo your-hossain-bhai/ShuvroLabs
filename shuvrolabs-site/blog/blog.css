@@ -1,0 +1,51 @@
+/* ShuvroLabs blog — uses the main site's style.css for header, footer, buttons */
+:root{--bn:'Hind Siliguri','Manrope','Arial',sans-serif}
+.blog-body{background:var(--paper)}
+.blog-hero{background:var(--dark);color:#f6f5f1;padding:84px 0 70px}
+.blog-hero .section-kicker{color:#cfcdc8}
+.blog-hero h1{font-family:var(--bn);font-size:clamp(34px,4.6vw,58px);line-height:1.25;letter-spacing:-.5px;font-weight:700;margin:22px 0 18px;max-width:900px}
+.blog-hero p{font-family:var(--bn);font-size:17px;line-height:1.8;color:#b9b7b3;max-width:720px;margin:0}
+.blog-meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:12px;font-weight:700;letter-spacing:1px;color:#8f8d8a;text-transform:uppercase}
+.blog-meta a{color:var(--orange)}
+/* list page */
+.post-list{padding:70px 0 100px}
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.post-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line-dark);border-radius:6px;padding:28px;transition:transform .2s,box-shadow .2s;min-height:300px}
+.post-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.post-card .post-tag{align-self:flex-start;font-size:9px;font-weight:800;letter-spacing:1.8px;color:var(--orange);border:1px solid currentColor;padding:4px 9px;border-radius:20px;margin-bottom:22px}
+.post-card h2{font-family:var(--bn);font-size:23px;line-height:1.45;font-weight:700;margin:0 0 14px;color:var(--ink)}
+.post-card p{font-family:var(--bn);font-size:15px;line-height:1.75;color:#64625d;margin:0 0 22px}
+.post-card .read-more{margin-top:auto;font-size:12px;font-weight:800;display:flex;justify-content:space-between;border-top:1px solid var(--line-dark);padding-top:16px}
+.post-card .read-more span{color:var(--orange);font-size:17px}
+/* article */
+.article-wrap{padding:64px 0 90px}
+.article{max-width:760px;margin:0 auto;font-family:var(--bn);font-size:18px;line-height:1.95;color:#2a2926}
+.article h2{font-family:var(--bn);font-size:clamp(25px,2.6vw,31px);line-height:1.4;font-weight:700;letter-spacing:-.2px;margin:52px 0 14px;color:var(--ink)}
+.article h3{font-family:var(--bn);font-size:21px;font-weight:700;margin:34px 0 10px;color:var(--ink)}
+.article p{margin:0 0 20px}
+.article ul,.article ol{margin:0 0 24px;padding-left:24px}
+.article li{margin-bottom:9px}
+.article a{color:#c94f12;text-decoration:underline;text-underline-offset:3px}
+.article strong{color:var(--ink)}
+.article table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:16px;background:#fff;border:1px solid var(--line-dark)}
+.article th,.article td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line-dark);vertical-align:top}
+.article th{background:#ecebe6;font-weight:700}
+.table-scroll{overflow-x:auto}
+.note{background:#fff;border-left:4px solid var(--orange);padding:18px 22px;border-radius:0 6px 6px 0;margin:28px 0;font-size:16px;line-height:1.8}
+.disclosure{font-size:14px;line-height:1.7;color:#6c6a65;background:#ecebe6;border-radius:6px;padding:14px 18px;margin:0 0 34px}
+.aff-box{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 30px}
+.aff-btn{display:inline-flex;align-items:center;gap:14px;background:var(--dark);color:#fff!important;text-decoration:none!important;font-family:var(--font);font-size:13px;font-weight:800;padding:14px 18px;border-radius:5px;transition:transform .2s}
+.aff-btn:hover{transform:translateY(-2px)}
+.aff-btn span{color:var(--orange)}
+.cta-box{background:var(--dark);color:#f6f5f1;border-radius:8px;padding:34px;margin:52px 0 10px}
+.cta-box h2{color:#fff;margin-top:0}
+.cta-box p{color:#c4c2be}
+.cta-box .btn{margin-top:6px;text-decoration:none;color:#151311}
+.toc{background:#fff;border:1px solid var(--line-dark);border-radius:6px;padding:20px 24px;margin:0 0 34px;font-size:16px}
+.toc strong{display:block;margin-bottom:8px}
+.toc ol{margin:0}
+.related{border-top:1px solid var(--line-dark);margin-top:56px;padding-top:28px}
+.related h2{margin-top:0;font-size:22px}
+.related ul{list-style:none;padding:0}
+@media(max-width:1000px){.post-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.blog-hero{padding:60px 0 50px}.post-grid{grid-template-columns:1fr}.article{font-size:17px}.cta-box{padding:26px 22px}}

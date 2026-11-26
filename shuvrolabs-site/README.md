@@ -28,6 +28,25 @@ Then visit `http://localhost:8000`.
 
 Deploy the contents of this folder as a **static site** to Netlify, Vercel, Cloudflare Pages, GitHub Pages, or your hosting provider. The website has no server-side requirements.
 
+## What's new in this version
+
+- Packages & pricing section with six starting-price packages (BDT and approx. USD)
+- Founding client offer (30% off for the first 10 clients, in exchange for an honest review) and a free digital audit offer
+- Messenger button, optional WhatsApp button, and a floating chat button
+- Form can send straight to your inbox through Web3Forms (free), with the old email-app method as fallback
+- Facebook page and LinkedIn company page linked in contact and footer
+- Better SEO: local keywords, canonical URL, schema.org business data, `robots.txt`, `sitemap.xml`
+- New FAQs about trust, payment and delivery time
+
+## Setup before upload (5 minutes)
+
+1. Open `script.js`. At the top, in `CONFIG`:
+   - `whatsappNumber`: your WhatsApp number, digits only, e.g. `8801712345678`. The WhatsApp buttons appear once this is set.
+   - `web3formsKey`: go to https://web3forms.com, enter your business email, and paste the key you receive. Inquiries then arrive in your inbox without opening the visitor's email app.
+2. Edit the package prices in `index.html` (search for `price-card`) if you want different numbers.
+3. Upload all files to your host, replacing the old ones.
+4. Add the site to Google Search Console and submit `https://www.shuvrolabs.tech/sitemap.xml`.
+
 ## Customize before launch
 
 1. Replace the interim personal contact email (`muhammadhossain.27.2001@gmail.com`) with the official ShuvroLabs business email once available, in both `index.html` and `script.js`.

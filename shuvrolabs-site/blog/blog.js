@@ -2,13 +2,14 @@
   'use strict';
 
   // ===== AFFILIATE LINKS: paste your own affiliate links here =====
-  // After Star Tech / Daraz / Hostinger approve you, copy your tracking link
+  // After Star Tech / Daraz / Hostinger / ExonHost approve you, copy your tracking link
   // from their affiliate dashboard and replace the plain link below.
   // Every link on the blog with data-aff="KEY" uses the value for that KEY.
   const AFFILIATE = {
     startechLaptops: 'https://www.startech.com.bd/laptop-notebook',
     darazLaptops: 'https://www.daraz.com.bd/laptops/',
-    hostinger: 'https://www.hostinger.com/bd'
+    hostinger: 'https://www.hostinger.com/bd',
+    exonhost: 'https://www.exonhost.com/'
   };
   // ================================================================
 

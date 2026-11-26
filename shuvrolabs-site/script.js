@@ -25,7 +25,6 @@
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('main-nav');
   const date = document.getElementById('current-year');
-  if (date) date.textContent = String(new Date().getFullYear());
 
   const closeMenu = () => {
     nav.classList.remove('open');

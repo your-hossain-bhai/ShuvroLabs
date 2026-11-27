@@ -3,7 +3,7 @@
 The daily task takes the first unchecked topic, writes it, and ticks it here in the same pull request.
 Edit freely: reorder, add, or delete lines.
 
-- [ ] ফেসবুক পেজের জন্য ফ্রিতে প্রফেশনাল পোস্ট ডিজাইন করার উপায় (Canva দিয়ে)
+- [x] ফেসবুক পেজের জন্য ফ্রিতে প্রফেশনাল পোস্ট ডিজাইন করার উপায় (Canva দিয়ে)
 - [ ] মোবাইল দিয়ে ভালো Reels এডিট করার ফ্রি অ্যাপ ও টিপস
 - [ ] অনলাইন দোকানের জন্য ক্যাশ অন ডেলিভারি রিটার্ন কমানোর উপায়
 - [ ] ছোট ব্যবসার জন্য WhatsApp Business সেটআপ ও ব্যবহার গাইড

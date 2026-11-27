@@ -83,6 +83,32 @@ def ld(obj):
 
 os.makedirs(OUT, exist_ok=True)
 
+# Small affiliate box added to post pages whose body has no affiliate button of its own.
+# Keys must exist in shuvrolabs-site/blog/blog.js (AFFILIATE).
+AFF_LINKS = {
+    'datahostbd': ('DataHost BD হোস্টিং', 'https://www.datahostbd.com/'),
+    'bdwebs': ('BDWebs হোস্টিং', 'https://www.bdwebs.com/'),
+    'bdshop': ('BD Shop-এ গ্যাজেট', 'https://www.bdshop.com/'),
+    'tenms': ('10 Minute School কোর্স', 'https://10minuteschool.com/'),
+}
+AFF_BY_TAG = {
+    'TECH GUIDE': ('গ্যাজেট বা নতুন স্কিল খুঁজছেন?', ['bdshop', 'tenms']),
+    'VIDEO': ('ভিডিও এডিটিং শিখতে বা গ্যাজেট কিনতে চান?', ['tenms', 'bdshop']),
+    'CAREER': ('ক্যারিয়ারের জন্য নতুন স্কিল শিখতে চান?', ['tenms', 'datahostbd']),
+}
+AFF_DEFAULT = ('নিজের ওয়েবসাইট শুরু করতে চান? bKash/Nagad-এ পেমেন্ট করা যায় এমন দেশি হোস্টিং:', ['datahostbd', 'bdwebs'])
+
+
+def aff_box(p, body):
+    if 'data-aff=' in body:
+        return ''
+    label, keys = AFF_BY_TAG.get(p['tag'], AFF_DEFAULT)
+    links = ''.join(f'<a class="aff-btn" data-aff="{k}" href="{AFF_LINKS[k][1]}">{AFF_LINKS[k][0]} <span>↗</span></a>' for k in keys)
+    return (f'<aside class="aff-mini" aria-label="Affiliate links"><p class="aff-mini-title">{label}</p>'
+            f'<div class="aff-box">{links}</div>'
+            '<p class="aff-mini-note">এগুলো affiliate লিংক। কিনলে ShuvroLabs সামান্য কমিশন পায়, আপনার দাম বাড়ে না।</p></aside>')
+
+
 # post pages
 for p in POSTS:
     url = f'{SITE}/blog/{p["slug"]}/'
@@ -113,6 +139,7 @@ for p in POSTS:
       <div class="container">
         <article class="article">
 {body}
+{aff_box(p, body)}
 {related}
         </article>
       </div>

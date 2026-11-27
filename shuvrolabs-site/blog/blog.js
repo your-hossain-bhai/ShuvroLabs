@@ -2,14 +2,15 @@
   'use strict';
 
   // ===== AFFILIATE LINKS: paste your own affiliate links here =====
-  // After Star Tech / Daraz / Hostinger / ExonHost approve you, copy your tracking link
-  // from their affiliate dashboard and replace the plain link below.
+  // Only programs that pay in Bangladesh via bKash / Nagad / Rocket.
+  // After each program approves you, copy your tracking link from its
+  // affiliate dashboard and replace the plain link below.
   // Every link on the blog with data-aff="KEY" uses the value for that KEY.
   const AFFILIATE = {
-    startechLaptops: 'https://www.startech.com.bd/laptop-notebook',
-    darazLaptops: 'https://www.daraz.com.bd/laptops/',
-    hostinger: 'https://www.hostinger.com/bd',
-    exonhost: 'https://www.exonhost.com/'
+    datahostbd: 'https://www.datahostbd.com/',  // DataHost BD: bKash, Nagad, bank
+    bdwebs: 'https://www.bdwebs.com/',          // BDWebs: bKash, Rocket, Nagad
+    bdshop: 'https://www.bdshop.com/',          // BD Shop: bKash, Rocket, bank
+    tenms: 'https://10minuteschool.com/'        // 10 Minute School: bKash
   };
   // ================================================================
 

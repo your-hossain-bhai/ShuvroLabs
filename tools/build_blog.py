@@ -86,16 +86,17 @@ os.makedirs(OUT, exist_ok=True)
 # Small affiliate box added to post pages whose body has no affiliate button of its own.
 # Keys must exist in shuvrolabs-site/blog/blog.js (AFFILIATE).
 AFF_LINKS = {
-    'hostinger': ('Hostinger হোস্টিং', 'https://www.hostinger.com/bd'),
-    'exonhost': ('ExonHost ডোমেইন ও হোস্টিং', 'https://www.exonhost.com/'),
-    'startechLaptops': ('Star Tech-এ ল্যাপটপ', 'https://www.startech.com.bd/laptop-notebook'),
-    'darazLaptops': ('Daraz-এ ল্যাপটপ', 'https://www.daraz.com.bd/laptops/'),
+    'datahostbd': ('DataHost BD হোস্টিং', 'https://www.datahostbd.com/'),
+    'bdwebs': ('BDWebs হোস্টিং', 'https://www.bdwebs.com/'),
+    'bdshop': ('BD Shop-এ গ্যাজেট', 'https://www.bdshop.com/'),
+    'tenms': ('10 Minute School কোর্স', 'https://10minuteschool.com/'),
 }
 AFF_BY_TAG = {
-    'TECH GUIDE': ('পড়াশোনা বা কাজের জন্য ল্যাপটপ খুঁজছেন?', ['startechLaptops', 'darazLaptops']),
-    'VIDEO': ('এডিটিংয়ের জন্য ল্যাপটপ খুঁজছেন?', ['startechLaptops', 'darazLaptops']),
+    'TECH GUIDE': ('গ্যাজেট বা নতুন স্কিল খুঁজছেন?', ['bdshop', 'tenms']),
+    'VIDEO': ('ভিডিও এডিটিং শিখতে বা গ্যাজেট কিনতে চান?', ['tenms', 'bdshop']),
+    'CAREER': ('ক্যারিয়ারের জন্য নতুন স্কিল শিখতে চান?', ['tenms', 'datahostbd']),
 }
-AFF_DEFAULT = ('নিজের ওয়েবসাইট শুরু করতে চান?', ['hostinger', 'exonhost'])
+AFF_DEFAULT = ('নিজের ওয়েবসাইট শুরু করতে চান? bKash/Nagad-এ পেমেন্ট করা যায় এমন দেশি হোস্টিং:', ['datahostbd', 'bdwebs'])
 
 
 def aff_box(p, body):

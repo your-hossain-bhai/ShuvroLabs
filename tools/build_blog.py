@@ -72,6 +72,8 @@ def head(title, desc, url, extra=''):
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/blog/blog.css" />
   <script src="/blog/blog.js" defer></script>
+  <meta name="google-adsense-account" content="ca-pub-7237759996121208" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7237759996121208" crossorigin="anonymous"></script>
 {extra}</head>
 <body class="blog-body" id="top">
 '''

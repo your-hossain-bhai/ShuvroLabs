@@ -30,7 +30,7 @@ HEADER = f'''  <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="ShuvroLabs Home">
-        <span class="brand-emblem"><img src="/assets/shuvrolabs-mark.png" alt="" /></span>
+        <span class="brand-emblem"><img src="/assets/shuvrolabs-mark.png" alt="ShuvroLabs logo" /></span>
         <span class="brand-name">Shuvro<span>Labs</span><small>THE DIGITAL GROWTH STUDIO</small></span>
       </a>
       <nav id="main-nav" class="main-nav" aria-label="Main navigation">
@@ -46,7 +46,7 @@ HEADER = f'''  <a class="skip-link" href="#main">Skip to main content</a>
   </header>'''
 
 FOOTER = f'''  <a class="float-chat" href="{MSG}" target="_blank" rel="noopener noreferrer" aria-label="Chat with ShuvroLabs"><span class="float-dot"></span>Chat with us</a>
-  <footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand-col"><a class="brand footer-brand" href="/" aria-label="ShuvroLabs home"><span class="brand-emblem"><img src="/assets/shuvrolabs-mark.png" alt="" /></span><span class="brand-name">Shuvro<span>Labs</span><small>THE DIGITAL GROWTH STUDIO</small></span></a><p>Independent in spirit. Creative by nature.<br/>Building what's next, together.</p><span class="footer-est">✳ ESTABLISHED 2025</span></div><div class="footer-links"><div><h4>EXPLORE</h4><a href="/#services">Services</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a><a href="/#about">About Us</a></div><div><h4>GUIDES</h4>{''.join(f'<a href="/blog/{p["slug"]}/">{html.escape(p["title"].split(":")[0])}</a>' for p in POSTS[:4])}<a href="/blog/">সব লেখা →</a></div><div><h4>CONNECT</h4><a href="/#contact">Start a Project</a><a href="{FB}" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="{LI}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div><div class="footer-bigword" aria-hidden="true">SHUVROLABS<span>✳</span></div><div class="footer-bottom"><span>© 2025 SHUVROLABS. ALL RIGHTS RESERVED.</span><span>MUHAMMAD HOSSAIN — FOUNDER & CEO</span><a href="#top">BACK TO TOP ↑</a></div></div></footer>'''
+  <footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand-col"><a class="brand footer-brand" href="/" aria-label="ShuvroLabs home"><span class="brand-emblem"><img src="/assets/shuvrolabs-mark.png" alt="ShuvroLabs logo" /></span><span class="brand-name">Shuvro<span>Labs</span><small>THE DIGITAL GROWTH STUDIO</small></span></a><p>Independent in spirit. Creative by nature.<br/>Building what's next, together.</p><span class="footer-est">✳ ESTABLISHED 2025</span></div><div class="footer-links"><div><h4>EXPLORE</h4><a href="/#services">Services</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a><a href="/#about">About Us</a></div><div><h4>GUIDES</h4>{''.join(f'<a href="/blog/{p["slug"]}/">{html.escape(p["title"].split(":")[0])}</a>' for p in POSTS[:4])}<a href="/blog/">সব লেখা →</a></div><div><h4>CONNECT</h4><a href="/#contact">Start a Project</a><a href="{FB}" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="{LI}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div><div class="footer-bigword" aria-hidden="true">SHUVROLABS<span>✳</span></div><div class="footer-bottom"><span>© 2025 SHUVROLABS. ALL RIGHTS RESERVED.</span><span>MUHAMMAD HOSSAIN — FOUNDER & CEO</span><a href="#top">BACK TO TOP ↑</a></div></div></footer>'''
 
 
 def head(title, desc, url, extra=''):

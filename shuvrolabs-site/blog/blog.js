@@ -7,10 +7,10 @@
   // affiliate dashboard and replace the plain link below.
   // Every link on the blog with data-aff="KEY" uses the value for that KEY.
   const AFFILIATE = {
-    datahostbd: 'https://www.datahostbd.com/',  // DataHost BD: bKash, Nagad, bank
-    bdwebs: 'https://www.bdwebs.com/',          // BDWebs: bKash, Rocket, Nagad
-    bdshop: 'https://www.bdshop.com/',          // BD Shop: bKash, Rocket, bank
-    tenms: 'https://10minuteschool.com/'        // 10 Minute School: bKash
+    datahostbd: 'https://www.datahostbd.com/?ref=MBSX4OVE',  // DataHost BD: bKash, Nagad, bank
+    bdwebs: 'https://cp.bdwebs.com/s/regular-number-44/614',      // BDWebs web hosting (aff 614): bKash, Rocket, Nagad
+    tenms: 'https://10ms.io/pXtusR',                           // 10 Minute School: bKash
+    hostinger: 'https://www.hostinger.com/?REFERRALCODE=2N6MDHOSSQEW'  // Hostinger referral: PayPal / wire / Hostinger balance
   };
   // ================================================================
 

@@ -36,6 +36,7 @@ Then run `python3 tools/build_blog.py`. It rebuilds every blog page, the blog in
 - Table of contents: `<div class="toc"><strong>এই লেখায় যা আছে</strong><ol>…</ol></div>`
 - Affiliate button (only these keys exist in `shuvrolabs-site/blog/blog.js`: `startechLaptops`, `darazLaptops`, `hostinger`, `exonhost`):
   `<div class="aff-box"><a class="aff-btn" data-aff="KEY" href="PLAIN_URL">লেখা <span>↗</span></a></div>`
+  Posts without their own affiliate button get a small affiliate box automatically from `tools/build_blog.py` (laptop links for `TECH GUIDE`/`VIDEO`, hosting links for other tags).
   If a post has any affiliate button, it must start with
   `<p class="disclosure">এই লেখার কিছু লিংক affiliate লিংক। সেখান থেকে কিনলে ShuvroLabs সামান্য কমিশন পায়, আপনার দাম বাড়ে না।</p>`
 - Closing call to action, matched to the topic, pointing to `/#pricing`, `/#offer` or `/#contact`:

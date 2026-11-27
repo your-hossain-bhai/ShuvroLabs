@@ -34,9 +34,9 @@ Then run `python3 tools/build_blog.py`. It rebuilds every blog page, the blog in
 - Table: `<div class="table-scroll"><table>…</table></div>`
 - Tip box: `<div class="note">…</div>`
 - Table of contents: `<div class="toc"><strong>এই লেখায় যা আছে</strong><ol>…</ol></div>`
-- Affiliate button (only these keys exist in `shuvrolabs-site/blog/blog.js`: `datahostbd`, `bdwebs`, `bdshop`, `tenms`; only programs that pay via bKash/Nagad/Rocket):
+- Affiliate button (only these keys exist in `shuvrolabs-site/blog/blog.js`: `datahostbd`, `bdwebs`, `tenms`, `hostinger`; prefer the first three, which pay via bKash/Nagad/Rocket):
   `<div class="aff-box"><a class="aff-btn" data-aff="KEY" href="PLAIN_URL">লেখা <span>↗</span></a></div>`
-  Posts without their own affiliate button get a small affiliate box automatically from `tools/build_blog.py` (BD Shop + 10 Minute School for `TECH GUIDE`/`VIDEO`, 10 Minute School + DataHost BD for `CAREER`, DataHost BD + BDWebs for the rest).
+  Posts without their own affiliate button get a small affiliate box automatically from `tools/build_blog.py` (10 Minute School for `TECH GUIDE`/`VIDEO`, 10 Minute School + DataHost BD for `CAREER`, DataHost BD + BDWebs for the rest).
   If a post has any affiliate button, it must start with
   `<p class="disclosure">এই লেখার কিছু লিংক affiliate লিংক। সেখান থেকে কিনলে ShuvroLabs সামান্য কমিশন পায়, আপনার দাম বাড়ে না।</p>`
 - Closing call to action, matched to the topic, pointing to `/#pricing`, `/#offer` or `/#contact`:
